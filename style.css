@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+/* // animation  */
+.animate-charcter {
+  /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #ffff 0%,
+    black 20%,
+    #ffff 30%,
+    black 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 60px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.border {
+  border-bottom: 1px solid white;
+}
+.container {
+  background: url("assets/pexels-donald-tong-23474.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  height: 600px;
+  position: relative;
+}
+.headerContent {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+.headerContent1 {
+  position: relative;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+nav {
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-image: url("assets/tickstitch-high-resolution-logo-white-on-transparent-background.png");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding-right: 70px;
+  letter-spacing: 5px;
+}
+
+/* .button {
+  height: 30px;
+  width: 90px;
+  position: relative;
+  top: 13px;
+} */
+
+.button {
+  height: 30px;
+  width: 90px;
+  position: relative;
+  top: 13px;
+  background-color: transparent;
+  border: 1px solid rgb(220, 220, 220);
+  outline: none;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+}
+
+.button:hover {
+  border-radius: 4px;
+  background-color: #000;
+  color: white;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.tick {
+  background: linear-gradient(to right, black, black, rgb(91, 89, 89));
+  height: 800px;
+  position: relative;
+}
+
+.tickbackground {
+  background: url("assets/watch-background.png");
+  /* background: url("assets/tickstitch-high-resolution-logo-white-on-transparent-background.png"); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  height: 600px;
+  position: absolute;
+  width: 100%;
+  bottom: 200px;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.tick:hover .tickbackground {
+  bottom: 60px;
+  opacity: 1;
+}
+
+.tickheader {
+  color: #ffffff;
+  text-align: center;
+  font-size: 70px;
+  position: relative;
+  bottom: -30px;
+  right: 33px;
+  letter-spacing: 25px;
+  opacity: 1;
+}
+.ticktextheader1 {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  left: 40px;
+  top: 90px;
+  letter-spacing: 15px;
+}
+.ticktextheader2 {
+  color: #fff;
+  font-size: 36px;
+  position: relative;
+  top: 100px;
+  right: 90px;
+  letter-spacing: 10px;
+  float: right;
+}
+
+.dwside1 img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  top: 170px;
+}
+.dwside2 img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  /* top: 170px; */
+  float: right;
+  bottom: 300px;
+}
+.dwside2 .dwsidebtn {
+  padding: 20px 120px;
+  float: right;
+  border: 1px solid white;
+  position: relative;
+  top: 100px;
+  background-color: transparent;
+  color: #fff;
+  left: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dwside2:hover .dwsidebtn {
+  background-color: #191919;
+  color: #fff;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.stitch {
+  background-color: #191919;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+
+.stitchbackground {
+  background: url("assets/stitch-background.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+}
+
+.stitchheader {
+  color: #ffffff;
+  text-align: center;
+  font-size: 70px;
+  position: relative;
+  bottom: -30px;
+
+  letter-spacing: 25px;
+  opacity: 1;
+}
+.stichimg img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  left: 800px;
+  top: 60px;
+}
+
+.stichbtn {
+  position: relative;
+
+  padding: 10px 100px;
+  top: 120px;
+  left: 450px;
+  background-color: transparent;
+  border: 1px solid grey;
+  text-decoration: none;
+  color: #fff;
+}
+
+.stichbtn:hover {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.endFooter {
+  height: 200px;
+  position: relative;
+  /* width: 400px; */
+  background-color: #000000;
+}
+
+.endFooter img {
+  position: absolute;
+  top: 30px;
+  left: 660px;
+  width: 10%;
+}
+
+.end {
+  position: relative;
+  color: #ffffff;
+  top: 140px;
+  text-align: center;
+}
